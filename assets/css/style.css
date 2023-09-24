@@ -227,6 +227,7 @@ h1.title {
 .help h1 {
     color: #083158;
     font-weight: 300;
+    font-size: 30px;
 }
 
 .help h4 {
