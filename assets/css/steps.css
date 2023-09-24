@@ -67,3 +67,12 @@ align-items: center;
     color: #fff;
     transform: translateX(-5px);
 }
+
+.form-estudante{
+    background-color: #fff;
+}
+
+.form-group input.step{
+border: 1px solid #c0c0c0;
+
+}
