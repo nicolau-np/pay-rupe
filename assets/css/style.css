@@ -169,6 +169,11 @@ h1.title {
     width: 30%;
 }
 
+.information div h1{
+    font-weight: 300;
+    color: #fff;
+}
+
 .information a {
     background-color: #083158;
     color: #fff;
@@ -196,11 +201,6 @@ h1.title {
 .information i {
     color: #083158;
     font-size: 50px;
-}
-
-.information h1 {
-    color: #fff;
-    text-shadow: 1px 1px #333;
 }
 
 .information p {
