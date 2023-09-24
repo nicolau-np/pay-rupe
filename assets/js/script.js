@@ -1,6 +1,10 @@
 const target = document.querySelectorAll("[data-anime]");
 const buttonTop = document.querySelector("#button-top");
 const previousScrollPosition = document.documentElement.scrollTop;
+const closeButton = document.querySelector('.close-button');
+const overflow = document.querySelector('.overflow')
+const mobileMenu = document.querySelector('.mobile-menu')
+
 
 function animeScroll() {
     const windowTop = window.scrollY + window.innerHeight * (3 / 4);
@@ -25,3 +29,11 @@ function animeScroll() {
     addAnimateInButtonTop();
     animeScroll();
   });
+
+  closeButton.addEventListener('click', function(){
+    overflow.classList.remove('active')
+  })
+
+  mobileMenu.addEventListener('click', function(){
+    overflow.classList.add('active')
+  })
