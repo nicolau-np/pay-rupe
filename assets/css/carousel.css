@@ -1,5 +1,5 @@
 section.fto-carousel {
-    background-image: linear-gradient(to top right,#195078, #6AAEE0, #51a0d9, #195078);
+    background-image: linear-gradient(to top right, #195078, #6AAEE0, #51a0d9, #195078);
     width: 100%;
 }
 
@@ -9,6 +9,7 @@ section.fto-carousel {
     align-items: center;
     padding: 15px 100px;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .hero .image {
@@ -39,7 +40,7 @@ section.fto-carousel {
 .carousel .item h1 {
     color: #fff;
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 30px;
     letter-spacing: 3px;
 }
@@ -83,7 +84,7 @@ section.fto-carousel {
 }
 
 
-.carousel .item.active h1{
+.carousel .item.active h1 {
     animation-name: carouselItemAnimate;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
@@ -93,18 +94,18 @@ section.fto-carousel {
     opacity: 0;
 }
 
-.carousel .item.active p{
+.carousel .item.active p {
     animation-name: carouselItemAnimate;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-animation-delay: 0.5s;
+    animation-delay: 0.5s;
     transform: translateX(10px);
     opacity: 0;
 }
 
-.carousel .item.active .comands{
+.carousel .item.active .comands {
     animation-name: carouselItemAnimate;
     animation-duration: 0.5s;
     animation-timing-function: ease-in;
@@ -116,8 +117,80 @@ animation-delay: 0.5s;
 }
 
 @keyframes carouselItemAnimate {
-    100%{
+    100% {
         opacity: 1;
-        transform: translate3d(0,0,0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@media screen and (max-width:678px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 10px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .hero .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    .hero .image img {
+        height: 340px;
+        width: 450px;
+    }
+
+    .hero .carousel {
+        width: 100%;
+    }
+
+    .hero .carousel .item {
+        text-align: center;
+    }
+
+    .hero .carousel .item .comands {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 878px) {
+    .hero {
+        flex-direction: column;
+        padding: 40px 100px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .hero .image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    .hero .image img {
+        height: 250px;
+        width: 350px;
+    }
+
+    .hero .carousel {
+        width: 100%;
+    }
+
+    .hero .carousel .item {
+        text-align: center;
+    }
+
+    .hero .carousel .item .comands {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
