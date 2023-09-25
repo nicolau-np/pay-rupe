@@ -79,4 +79,45 @@ section.fto-carousel {
 .carousel .item .comands a:hover {
     background-color: transparent;
     border: 2px solid #083158;
+    color: #fff;
+}
+
+
+.carousel .item.active h1{
+    animation-name: carouselItemAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transform: translateX(-10px);
+    opacity: 0;
+}
+
+.carousel .item.active p{
+    animation-name: carouselItemAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+animation-delay: 0.5s;
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.carousel .item.active .comands{
+    animation-name: carouselItemAnimate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transform: translateY(10px);
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+@keyframes carouselItemAnimate {
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
 }
