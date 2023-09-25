@@ -296,7 +296,7 @@ h1.title {
 }
 
 .help {
-    background-color: rgb(106, 174, 224, 0.5);
+    background-image: linear-gradient(to top right, #6AAEE0, #6AAEE0, #195078);
     padding: 40px 0;
 
 }

@@ -1,0 +1,82 @@
+section.fto-carousel {
+    background-image: linear-gradient(to top right,#195078, #6AAEE0, #51a0d9, #195078);
+    width: 100%;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 100px;
+    justify-content: space-between;
+}
+
+.hero .image {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .image img {
+    height: 390px;
+    width: 500px;
+}
+
+.hero .carousel {
+    width: 500px;
+}
+
+.carousel .item {
+    display: none;
+}
+
+.carousel .item.active {
+    display: block !important;
+}
+
+.carousel .item h1 {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.carousel .item p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.carousel .item .comands {
+    display: flex;
+    gap: 30px;
+}
+
+.carousel .item .comands a {
+    display: flex;
+    width: 200px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    transition: all 0.5 ease;
+    box-shadow: 0.2px 0.5px 10px #333;
+}
+
+.carousel .item .comands a:first-child {
+    background-color: #083158;
+    color: #fff;
+}
+
+.carousel .item .comands a:hover {
+    background-color: transparent;
+    border: 2px solid #083158;
+}

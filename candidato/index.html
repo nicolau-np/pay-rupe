@@ -7,7 +7,7 @@
     <title>PayRUPE - Portal de Pagamentos</title>
     <link rel="stylesheet" href="./../assets/css/style.css">
     <link rel="stylesheet" href="./../assets/css/steps.css">
-
+    <link rel="stylesheet" href="./../assets/css/carousel.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -24,9 +24,10 @@
                 <div class="menu-overflow">
                     <h1>Navegação</h1>
                     <ul>
-                        <li><a href="./../index.html#entrar">Entrar</a></li>
-                        <li><a href="./../index.html#informacoes">Informações</a></li>
-                        <li><a href="./../index.html#help">Contactar</a></li>
+                        <li><a href="./index.html">Início</a></li>
+                        <li><a href="./candidaturas.html">Candidaturas</a></li>
+                        <li><a href="./profile.html">Perfil</a></li>
+                        <li><a href="./../index.html">Sair</a></li>
                     </ul>
                     <div class="bottom-overflow">
                         <img src="./../assets/images/logos/logo_only.png" alt="logo_only">
@@ -44,9 +45,10 @@
                 </div>
 
                 <ul class="menu">
-                    <li><a href="./../index.html#entrar">Entrar</a></li>
-                    <li><a href="./../index.html#informacoes">Informações</a></li>
-                    <li><a href="./../index.html#help">Contactar</a></li>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./candidaturas.html">Candidaturas</a></li>
+                    <li><a href="./profile.html">Perfil</a></li>
+                    <li><a href="./../index.html">Sair</a></li>
                 </ul>
 
                 <div class="mobile-menu">
@@ -57,24 +59,35 @@
             </nav>
         </header>
 
-        <div class="banner">
 
-            <div class="breacumbs">
-                <h1>Augusto Matias Pelo</h1>
-                <ul>
-                    <li><a href="./../index.html">PayRUPE</li>
-                    <li><i class="fas fa-angle-right"></i></li>
-                    <li><a href="./profile.html">Perfil</i></a></li>
-                    <li><i class="fas fa-angle-right"></i></li>
-                    <li><a href="./index.html" class="active">Candidaturas</i></a></li>
-                </ul>
+        <section class="fto-carousel">
+            <div class="hero">
+                <div class="carousel">
+                    <div class="item active">
+                        <h1>PayRUPE Portal de Pagamentos</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illum harum quam quidem minus
+                            atque similique. Aperiam tempora saepe dolores vero nam, similique.</p>
+                        <div class="comands">
+                            <a href="#">Gerar Rupe</a>
+                            <a href="#">Contactar</a>
+                        </div>
+                    </div>
 
+                    <div class="item">
+                        <h1>És um novo Candidato?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab illum harum quam quidem minus
+                            atque similique. Aperiam tempora saepe dolores vero nam, similique temporibus amet aliquid
+                            architecto quibusdam neque! Necessitatibus.</p>
+                        <div class="comands">
+                            <a href="#">Nova Candidatura</a>
+                            <a href="#">Perfil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./../assets/images/hero.png" alt="" srcset="">
+                </div>
             </div>
-            <a href="#" class="back-button"><i class="fas fa-angle-left"></i></a>
-        </div>
-
-        <section>
-         
         </section>
 
 
@@ -95,6 +108,7 @@
     </div>
     <a href="#" id="button-top"><i class="fas fa-angle-up"></i></a>
     <script src="./../assets/js/script.js"></script>
+    <script src="./../assets/js/carousel.js"></script>
 </body>
 
 </html>
