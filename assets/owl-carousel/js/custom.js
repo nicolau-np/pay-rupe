@@ -8,7 +8,7 @@ $(".owl-features").owlCarousel({
   autoplayTimeout: 5000,
   responsive: {
     0: {
-      items: 1
+      items: 2
     },
     800: {
       items: 2

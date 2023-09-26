@@ -450,6 +450,10 @@ h1.title {
 }
 
 
+section.fto-section {
+    background-image: linear-gradient(to top right, #195078, #6AAEE0, #51a0d9, #195078);
+}
+
 .wraper {
     display: flex;
     margin: 0 100px;
@@ -465,6 +469,10 @@ h1.title {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #083158;
 }
 
 
@@ -507,9 +515,11 @@ h1.title {
 }
 
 .wraper .content {
-    border: 1px solid #333;
     width: 60%;
     padding: 10px;
+    box-shadow: 1px 1px 5px #083158;
+    border-radius: 20px;
+    background-color: #fff;
 }
 
 .wraper aside .card-new {
@@ -535,13 +545,21 @@ h1.title {
     font-weight: 400;
 }
 
-
-
 .wraper .content .card {
-    background-color: #6AAEE0;
+    background-image: linear-gradient(to top right, #6AAEE0, #377fb3, #20567c);
     padding: 10px;
     color: #fff;
     border-radius: 10px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.wraper .content .card:hover {
+    background-image: linear-gradient(to top left, #6AAEE0, #377fb3, #20567c);
+}
+
+.wraper .content .card:hover p {
+    color: #6AAEE0;
 }
 
 .wraper .content .card h1 {
@@ -549,18 +567,23 @@ h1.title {
     text-shadow: 1px 1px #333;
 }
 
-.wraper .content .card h4{
+.wraper .content .card h4 {
     margin: 10px 0;
     font-weight: 600;
 }
 
-.wraper .content .card p{
+.wraper .content .card p {
     text-align: right;
     font-size: 12px;
     color: #083158;
+    text-shadow: 0.5px 0.5px #fff;
 }
 
-
+.wraper .content .descriptions {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #333;
+}
 
 /*animations*/
 @keyframes pulse {
@@ -612,6 +635,32 @@ h1.title {
 
 /*medias queries*/
 @media screen and (max-width:678px) {
+    .wraper {
+        margin: 0 10px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .wraper aside {
+        width: 100%;
+    }
+
+    .wraper aside img, p {
+        display: none;
+    }
+
+    .wraper aside a{
+        display: none;
+    }
+
+    .wraper .content{
+        width: 100%;
+    }
+
+    .wraper .content .card{
+        width: 250px;
+    }
+
     .nav {
         padding: 10px 20px;
     }
