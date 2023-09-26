@@ -23,6 +23,14 @@ section.fto-carousel {
 .hero .image img {
     height: 390px;
     width: 500px;
+    transform: translateX(100px);
+    opacity: 0;
+    animation-name: animateImage;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 0.5s;
 }
 
 .hero .carousel {
@@ -90,6 +98,7 @@ section.fto-carousel {
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    animation-delay: 0s;
     transform: translateX(-10px);
     opacity: 0;
 }
@@ -120,6 +129,13 @@ section.fto-carousel {
     100% {
         opacity: 1;
         transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes animateImage {
+    100%{
+        transform: translate3d(0,0,0);
+        opacity: 1;
     }
 }
 
