@@ -543,6 +543,7 @@ h1.title {
 
 .header-section .card.new{
     width: 200px !important;
+    background-color: #0a6907;
 }
 
 .header-section .card.new h1{
