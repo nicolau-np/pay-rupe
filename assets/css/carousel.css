@@ -125,6 +125,8 @@ section.fto-carousel {
     opacity: 0;
 }
 
+
+
 @keyframes carouselItemAnimate {
     100% {
         opacity: 1;

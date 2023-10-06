@@ -2,7 +2,7 @@ $(".owl-features").owlCarousel({
   items: 3,
   loop: true,
   dots: false,
-  nav: false,
+  nav: true,
   autoplay: false,
   margin: 10,
   autoplayTimeout: 5000,
@@ -14,7 +14,7 @@ $(".owl-features").owlCarousel({
       items: 2
     },
     1000: {
-      items: 3
+      items: 2
     }
   }
 });
